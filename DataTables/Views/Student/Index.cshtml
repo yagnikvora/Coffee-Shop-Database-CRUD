@@ -1,0 +1,79 @@
+﻿@model DataTables.Models.Student.StudentModel 
+<form asp-controller="Student" asp-action="Index">
+   
+    <div class="form-group row my-2">
+        <label asp-for="StudentName" class="control-label col-2">Enter Student Name<span class="text-danger">*</span></label>
+        <input asp-for="StudentName" class="form-control col" />
+        <span asp-validation-for="StudentName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group row my-2">
+        <label asp-for="EnrollmentNo" class="control-label col-2">Enrollment No<span class="text-danger">*</span></label>
+        <input asp-for="EnrollmentNo" class="form-control col" />
+        <span asp-validation-for="EnrollmentNo" class="text-danger"></span>
+    </div>
+
+    <div class="form-group row my-2">
+        <label asp-for="Password" class="control-label col-2">Password<span class="text-danger">*</span></label>
+        <input asp-for="Password" class="form-control col" type="password" />
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+
+    <div class="form-group row my-2">
+        <label asp-for="RollNo" class="control-label col-2">Roll No<span class="text-danger">*</span></label>
+        <input asp-for="RollNo" class="form-control col" />
+        <span asp-validation-for="RollNo" class="text-danger"></span>
+    </div>
+
+    <div class="form-group row my-2">
+        <label asp-for="CurrentSemester" class="control-label col-2">Current Semester<span class="text-danger">*</span></label>
+        <input asp-for="CurrentSemester" class="form-control col" />
+        <span asp-validation-for="CurrentSemester" class="text-danger"></span>
+    </div>
+
+    <div class="form-group row my-2">
+        <label asp-for="EmailInstitute" class="control-label col-2">Institue Email<span class="text-danger">*</span></label>
+        <input asp-for="EmailInstitute" class="form-control col" />
+        <span asp-validation-for="EmailInstitute" class="text-danger"></span>
+    </div>
+
+    <div class="form-group row my-2">
+        <label asp-for="EmailPersonal" class="control-label col-2">Pesronal Email<span class="text-danger">*</span></label>
+        <input asp-for="EmailPersonal" class="form-control col" />
+        <span asp-validation-for="EmailPersonal" class="text-danger"></span>
+    </div>
+
+    <div class="form-group row my-2">
+        <label asp-for="ContactNo" class="control-label col-2">Contact No<span class="text-danger">*</span></label>
+        <input asp-for="ContactNo" class="form-control col" />
+        <span asp-validation-for="ContactNo" class="text-danger"></span>
+    </div>
+
+    <div class="form-group row my-2">
+        <label asp-for="CastID" class="control-label col-2">Cast ID<span class="text-danger">*</span></label>
+        <input asp-for="CastID" class="form-control col" />
+        <span asp-validation-for="CastID" class="text-danger"></span>
+    </div>
+
+    <div class="form-group row my-2">
+        <label asp-for="CityID" class="control-label col-2">City ID<span class="text-danger">*</span></label>
+        <input asp-for="CityID" class="form-control col" />
+        <span asp-validation-for="CityID" class="text-danger"></span>
+    </div>
+
+    <div class="form-group row my-2">
+        <label asp-for="Remarks" class="control-label col-2">Remarks<span class="text-danger">*</span></label>
+        <textarea asp-for="Remarks" class="form-control col"></textarea>
+        <span asp-validation-for="Remarks" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  
+</form>
+@section Scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

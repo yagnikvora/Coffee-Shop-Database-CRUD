@@ -1,0 +1,57 @@
+﻿@model DataTable
+@using System.Data
+<h2>Orders List</h2>
+<p class="text-danger">@TempData["ErrorMessage"]</p>
+<hr />
+<a class="btn btn-info" asp-controller="Order" asp-action="AddEditOrder">Add Orders</a>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            @* <th>OrderID</th> *@
+            <th>Order Number</th>
+            <th>OrderDate</th>
+            @* <th>CustomerID</th> *@
+            <th>Customer Name</th>
+            <th>PaymentMode</th>
+            <th>TotalAmount</th>
+            <th>ShippingAddress</th>
+            <th>UserName</th>
+            <th colspan="2">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            foreach (DataRow order in Model.Rows)
+            {
+                <tr>
+                    @*<td>@order["OrderID"]</td>*@
+                    <td>@order["OrderNumber"]</td>
+                    <td>@order["OrderDate"]</td>
+                    @*<td>@order["CustomerID"]</td>*@
+                    <td>@order["CustomerName"]</td>
+                    <td>@order["PaymentMode"]</td>
+                    <td>@order["TotalAmount"]</td>
+                    <td>@order["ShippingAddress"]</td>
+                    <td>@order["UserName"]</td>
+                    <td>
+                        <a asp-controller="Order" asp-action="AddEditOrder" asp-route-id = "@order["OrderID"]">
+                            <button type="submit" class="btn btn-warning">
+                                <i class="bx bx-edit"></i>
+                            </button>
+                        </a>
+                    </td>
+                    <td>
+                        <form method="post" asp-controller="Order" asp-action="OrderDelete">
+                            <input type="hidden" name="OrderID" value="@order["OrderID"]" />
+                            <button onclick=" return confirm('Sure!! Are you want to delete @order["OrderID"]')" type="submit" class="btn btn-danger">
+                                <i class="bx bxs-trash"></i>
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

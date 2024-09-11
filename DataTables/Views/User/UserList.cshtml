@@ -1,0 +1,53 @@
+﻿@model DataTable
+@using System.Data
+
+<h2>Users List</h2>
+<p class="text-danger">@TempData["ErrorMessage"]</p>
+<hr />
+<a class="btn btn-info" asp-controller="User" asp-action="AddEditUser">Add Users</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>UserID</th>
+            <th>UserName</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>MobileNo</th>
+            <th>Address</th>
+            <th>IsActive</th>
+            <th colspan="2">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            foreach (DataRow user in Model.Rows)
+            {
+                <tr>
+                    <td>@user["UserID"]</td>
+                    <td>@user["UserName"]</td>
+                    <td>@user["Email"]</td>
+                    <td>@user["Password"]</td>
+                    <td>@user["MobileNo"]</td>
+                    <td>@user["Address"]</td>
+                    <td>@user["IsActive"]</td>
+                    <td>
+                        <a asp-controller="User" asp-action="AddEditUser" asp-route-id = "@user["UserID"]">
+                            <button type="submit" class="btn btn-warning">
+                                <i class="bx bx-edit"></i>
+                            </button>
+                        </a>
+                    </td>
+                    <td>
+                        <form method="post" asp-controller="User" asp-action="UserDelete">
+                            <input type="hidden" name="UserID" value="@user["UserID"]" />
+                            <button onclick=" return confirm('Sure!! Are you want to delete @user["UserName"]')" type="submit" class="btn btn-danger">
+                                <i class="bx bxs-trash"></i>
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

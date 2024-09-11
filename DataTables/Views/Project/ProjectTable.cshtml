@@ -1,0 +1,30 @@
+﻿@model List<DataTables.Models.Employee.ProjectModel>
+<a class="btn btn-primary mb-3" asp-controller="Project" asp-action="AddProject">Add Project</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>PID</th>
+            <th>Project Name</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Budget</th>
+            <th colspan="2">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            foreach (var e in Model)
+            {
+                <tr>
+                    <td>@e.PID</td>
+                    <td>@e.ProjectName</td>
+                    <td>@e.StartDate</td>
+                    <td>@e.EndDate</td>
+                    <td>@e.Budget</td>
+                    <td><a class="btn btn-warning"><h5 class="bx bx-edit"></h5></a></td>
+                    <td><a class="btn btn-danger"><h5 class="bx bxs-trash"></h5></a></td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

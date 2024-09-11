@@ -1,0 +1,166 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\SEM-5\\DOTNET\\Web Applications\\DataTables\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{645E7273-E017-4C43-9B42-D323F8DEF109}|DataTables.csproj|e:\\sem-5\\dotnet\\web applications\\datatables\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{645E7273-E017-4C43-9B42-D323F8DEF109}|DataTables.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{645E7273-E017-4C43-9B42-D323F8DEF109}|DataTables.csproj|e:\\sem-5\\dotnet\\web applications\\datatables\\views\\order\\orderlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{645E7273-E017-4C43-9B42-D323F8DEF109}|DataTables.csproj|solutionrelative:views\\order\\orderlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{645E7273-E017-4C43-9B42-D323F8DEF109}|DataTables.csproj|e:\\sem-5\\dotnet\\web applications\\datatables\\views\\bills\\billslist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{645E7273-E017-4C43-9B42-D323F8DEF109}|DataTables.csproj|solutionrelative:views\\bills\\billslist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{645E7273-E017-4C43-9B42-D323F8DEF109}|DataTables.csproj|e:\\sem-5\\dotnet\\web applications\\datatables\\views\\bills\\addeditbill.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{645E7273-E017-4C43-9B42-D323F8DEF109}|DataTables.csproj|solutionrelative:views\\bills\\addeditbill.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{645E7273-E017-4C43-9B42-D323F8DEF109}|DataTables.csproj|e:\\sem-5\\dotnet\\web applications\\datatables\\controllers\\coffee\\billscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{645E7273-E017-4C43-9B42-D323F8DEF109}|DataTables.csproj|solutionrelative:controllers\\coffee\\billscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{645E7273-E017-4C43-9B42-D323F8DEF109}|DataTables.csproj|e:\\sem-5\\dotnet\\web applications\\datatables\\controllers\\coffee\\orderdetailscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{645E7273-E017-4C43-9B42-D323F8DEF109}|DataTables.csproj|solutionrelative:controllers\\coffee\\orderdetailscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{645E7273-E017-4C43-9B42-D323F8DEF109}|DataTables.csproj|e:\\sem-5\\dotnet\\web applications\\datatables\\models\\coffee\\ordermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{645E7273-E017-4C43-9B42-D323F8DEF109}|DataTables.csproj|solutionrelative:models\\coffee\\ordermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{645E7273-E017-4C43-9B42-D323F8DEF109}|DataTables.csproj|e:\\sem-5\\dotnet\\web applications\\datatables\\views\\orderdetails\\addeditorderdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{645E7273-E017-4C43-9B42-D323F8DEF109}|DataTables.csproj|solutionrelative:views\\orderdetails\\addeditorderdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{645E7273-E017-4C43-9B42-D323F8DEF109}|DataTables.csproj|e:\\sem-5\\dotnet\\web applications\\datatables\\views\\orderdetails\\orderdetailslist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{645E7273-E017-4C43-9B42-D323F8DEF109}|DataTables.csproj|solutionrelative:views\\orderdetails\\orderdetailslist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\SEM-5\\DOTNET\\Web Applications\\DataTables\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\SEM-5\\DOTNET\\Web Applications\\DataTables\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAH0BAAAAAAAAAAAAAJEBAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-10T02:35:37.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrderList.cshtml",
+              "DocumentMoniker": "E:\\SEM-5\\DOTNET\\Web Applications\\DataTables\\Views\\Order\\OrderList.cshtml",
+              "RelativeDocumentMoniker": "Views\\Order\\OrderList.cshtml",
+              "ToolTip": "E:\\SEM-5\\DOTNET\\Web Applications\\DataTables\\Views\\Order\\OrderList.cshtml",
+              "RelativeToolTip": "Views\\Order\\OrderList.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-09T17:06:36.176Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BillsList.cshtml",
+              "DocumentMoniker": "E:\\SEM-5\\DOTNET\\Web Applications\\DataTables\\Views\\Bills\\BillsList.cshtml",
+              "RelativeDocumentMoniker": "Views\\Bills\\BillsList.cshtml",
+              "ToolTip": "E:\\SEM-5\\DOTNET\\Web Applications\\DataTables\\Views\\Bills\\BillsList.cshtml",
+              "RelativeToolTip": "Views\\Bills\\BillsList.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB4AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-09T17:03:27.237Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AddEditBill.cshtml",
+              "DocumentMoniker": "E:\\SEM-5\\DOTNET\\Web Applications\\DataTables\\Views\\Bills\\AddEditBill.cshtml",
+              "RelativeDocumentMoniker": "Views\\Bills\\AddEditBill.cshtml",
+              "ToolTip": "E:\\SEM-5\\DOTNET\\Web Applications\\DataTables\\Views\\Bills\\AddEditBill.cshtml",
+              "RelativeToolTip": "Views\\Bills\\AddEditBill.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-09T17:03:09.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BillsController.cs",
+              "DocumentMoniker": "E:\\SEM-5\\DOTNET\\Web Applications\\DataTables\\Controllers\\Coffee\\BillsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Coffee\\BillsController.cs",
+              "ToolTip": "E:\\SEM-5\\DOTNET\\Web Applications\\DataTables\\Controllers\\Coffee\\BillsController.cs",
+              "RelativeToolTip": "Controllers\\Coffee\\BillsController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAwDMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T17:02:43.294Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AddEditOrderDetail.cshtml",
+              "DocumentMoniker": "E:\\SEM-5\\DOTNET\\Web Applications\\DataTables\\Views\\OrderDetails\\AddEditOrderDetail.cshtml",
+              "RelativeDocumentMoniker": "Views\\OrderDetails\\AddEditOrderDetail.cshtml",
+              "ToolTip": "E:\\SEM-5\\DOTNET\\Web Applications\\DataTables\\Views\\OrderDetails\\AddEditOrderDetail.cshtml",
+              "RelativeToolTip": "Views\\OrderDetails\\AddEditOrderDetail.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACUAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-09T17:00:35.721Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OrderModel.cs",
+              "DocumentMoniker": "E:\\SEM-5\\DOTNET\\Web Applications\\DataTables\\Models\\Coffee\\OrderModel.cs",
+              "RelativeDocumentMoniker": "Models\\Coffee\\OrderModel.cs",
+              "ToolTip": "E:\\SEM-5\\DOTNET\\Web Applications\\DataTables\\Models\\Coffee\\OrderModel.cs",
+              "RelativeToolTip": "Models\\Coffee\\OrderModel.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAIAwwB8AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T17:00:08.559Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrderDetailsController.cs",
+              "DocumentMoniker": "E:\\SEM-5\\DOTNET\\Web Applications\\DataTables\\Controllers\\Coffee\\OrderDetailsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Coffee\\OrderDetailsController.cs",
+              "ToolTip": "E:\\SEM-5\\DOTNET\\Web Applications\\DataTables\\Controllers\\Coffee\\OrderDetailsController.cs",
+              "RelativeToolTip": "Controllers\\Coffee\\OrderDetailsController.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAIAwwDIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T16:59:35.089Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OrderDetailsList.cshtml",
+              "DocumentMoniker": "E:\\SEM-5\\DOTNET\\Web Applications\\DataTables\\Views\\OrderDetails\\OrderDetailsList.cshtml",
+              "RelativeDocumentMoniker": "Views\\OrderDetails\\OrderDetailsList.cshtml",
+              "ToolTip": "E:\\SEM-5\\DOTNET\\Web Applications\\DataTables\\Views\\OrderDetails\\OrderDetailsList.cshtml",
+              "RelativeToolTip": "Views\\OrderDetails\\OrderDetailsList.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB8AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-09T16:57:10.616Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

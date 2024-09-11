@@ -1,0 +1,51 @@
+﻿@model DataTables.Models.Coffee.OrderDetailsModel
+
+<h1>@((Model?.OrderDetailID > 0) ? "Edit" : "Add") Order Details</h1>
+
+<form asp-controller="OrderDetails" asp-action="SaveOrderDetail">
+    @Html.HiddenFor(m => m.OrderDetailID)
+
+    <div class="form-group row my-2">
+        <label class="col-2" asp-for="OrderID">Order <span class="text-danger">*</span></label>
+        <select class="form-control col" asp-for="OrderID" asp-items="@(new SelectList(ViewBag.OrderList, "OrderID", "OrderNumber"))">
+            <option value="" selected disabled>Select Order</option>
+        </select>
+        <span asp-validation-for="OrderID" class="text-danger"></span>
+    </div>
+    <div class="form-group row my-2">
+        <label class="col-2" asp-for="ProductID">Product <span class="text-danger">*</span></label>
+        <select class="form-control col" asp-for="ProductID" asp-items="@(new SelectList(ViewBag.ProductList, "ProductID", "ProductName"))">
+            <option value="" selected disabled>Select Product</option>
+        </select>
+        <span asp-validation-for="ProductID" class="text-danger"></span>
+    </div>
+    <div class="form-group row my-2">
+        <label class="col-2" asp-for="Quantity">Quantity<span class="text-danger">*</span></label>
+        <input asp-for="Quantity" class="form-control col" />
+        <span asp-validation-for="Quantity" class="text-danger"></span>
+    </div>
+    <div class="form-group row my-2">
+        <label class="col-2" asp-for="Amount">Amount<span class="text-danger">*</span></label>
+        <input asp-for="Amount" class="form-control col" />
+        <span asp-validation-for="Amount" class="text-danger"></span>
+    </div>
+    <div class="form-group row my-2">
+        <label class="col-2" asp-for="TotalAmount">Total Amount<span class="text-danger">*</span></label>
+        <input asp-for="TotalAmount" class="form-control col" />
+        <span asp-validation-for="TotalAmount" class="text-danger"></span>
+    </div>
+    <div class="form-group row my-2">
+        <label class="col-2" asp-for="UserID">User <span class="text-danger">*</span></label>
+        <select class="form-control col" asp-for="UserID" asp-items="@(new SelectList(ViewBag.UserList, "UserID", "UserName"))">
+            <option value="" selected disabled>Select User</option>
+        </select>
+        <span asp-validation-for="UserID" class="text-danger"></span>
+    </div>
+    <button type="submit" class=" btn @((Model?.OrderDetailID > 0) ?  "btn-success" :  "btn-primary")">@((Model?.OrderDetailID > 0) ? "Edit" : "Add")</button>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

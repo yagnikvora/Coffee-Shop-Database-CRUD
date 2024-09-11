@@ -1,0 +1,58 @@
+﻿@model DataTable
+@using System.Data
+
+<h2>Customer List</h2>
+<p class="text-danger">@TempData["ErrorMessage"]</p>
+<hr />
+<a class="btn btn-info" asp-controller="Customer" asp-action="AddEditCustomer">Add Customer</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th colspan="2">Actions</th>
+            @* <th>CustomerID</th> *@
+            <th>CustomerName</th>
+            <th>HomeAddress</th>
+            <th>Email</th>
+            <th>MobileNo</th>
+            <th>GST NO</th>
+            <th>CityName</th>
+            <th>PinCode</th>
+            <th>NetAmount</th>
+            <th>User Name</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (DataRow customer in Model.Rows)
+        {
+            <tr>
+                <td>
+                    <a asp-controller="Customer" asp-action="AddEditCustomer" asp-route-id="@customer["CustomerID"]">
+                        <button type="submit" class="btn btn-warning">
+                            <i class="bx bx-edit"></i>
+                        </button>
+                    </a>
+                </td>
+                <td>
+                    <form method="post" asp-controller="Customer" asp-action="CustomerDelete">
+                        <input type="hidden" name="CustomerID" value="@customer["CustomerID"]" />
+                        <button onclick=" return confirm('Sure!! Are you want to delete @customer["CustomerName"]')" type="submit" class="btn btn-danger">
+                            <i class="bx bxs-trash"></i>
+                        </button>
+                    </form>
+                </td>
+                @* <td>@customer["CustomerID"]</td> *@
+                <td>@customer["CustomerName"]</td>
+                <td>@customer["HomeAddress"]</td>
+                <td>@customer["Email"]</td>
+                <td>@customer["MobileNo"]</td>
+                <td>@customer["GSTNO"]</td>
+                <td>@customer["CityName"]</td>
+                <td>@customer["PinCode"]</td>
+                <td>@customer["NetAmount"]</td>
+                <td>@customer["UserName"]</td>
+            </tr>
+        }
+    </tbody>
+</table>

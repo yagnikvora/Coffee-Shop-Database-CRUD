@@ -1,0 +1,24 @@
+﻿@model List<DataTables.Models.Employee.DepartmenModel>
+<a class="btn btn-primary mb-3" asp-controller="Department" asp-action="AddDepartment">Add Department</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>DeptID</th>
+            <th>Department Name</th>
+            <th colspan="2">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            foreach (var e in Model)
+            {
+                <tr>
+                    <td>@e.DeptID</td>
+                    <td>@e.DepartmentName</td>
+                    <td><a class="btn btn-warning"><h5 class="bx bx-edit"></h5></a></td>
+                    <td><a class="btn btn-danger"><h5 class="bx bxs-trash"></h5></a></td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

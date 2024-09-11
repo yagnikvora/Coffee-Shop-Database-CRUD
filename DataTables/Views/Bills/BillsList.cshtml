@@ -1,0 +1,54 @@
+﻿@model DataTable
+@using System.Data
+
+<h2>Bills List</h2>
+<p class="text-danger">@TempData["ErrorMessage"]</p>
+
+<hr />
+<a class="btn btn-info" asp-controller="Bills" asp-action="AddEditBill">Add Bill</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            @* <th>Bill ID</th> *@
+            <th>Bill Number</th>
+            <th>Bill Date</th>
+            <th>Order Number</th>
+            <th>Total Amount</th>
+            <th>Discount</th>
+            <th>Net Amount</th>
+            <th>User Name</th>
+            <th colspan="2">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (DataRow bill in Model.Rows)
+        {
+            <tr>
+                @* <td>@bill["BillID"]</td> *@
+                <td>@bill["BillNumber"]</td>
+                <td>@bill["BillDate"]</td>
+                <td>@bill["OrderNumber"]</td>
+                <td>@bill["TotalAmount"]</td>
+                <td>@bill["Discount"]</td>
+                <td>@bill["NetAmount"]</td>
+                <td>@bill["UserName"]</td>
+                <td>
+                    <a asp-controller="Bills" asp-action="AddEditBill" asp-route-id="@bill["BillID"]">
+                        <button type="submit" class="btn btn-warning">
+                            <i class="bx bx-edit"></i>
+                        </button>
+                    </a>
+                </td>
+                <td>
+                    <form method="post" asp-controller="Bills" asp-action="BillDelete">
+                        <input type="hidden" name="BillID" value="@bill["BillID"]" />
+                        <button onclick=" return confirm('Sure!! Are you want to delete @bill["BillNumber"]')" type="submit" class="btn btn-danger">
+                            <i class="bx bxs-trash"></i>
+                        </button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
