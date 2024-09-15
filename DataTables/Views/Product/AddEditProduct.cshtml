@@ -30,7 +30,11 @@
         </select>
         <span asp-validation-for="UserID" class="text-danger"></span>
     </div>
-    <button type="submit" class=" btn @((Model?.ProductID > 0) ?  "btn-success" :  "btn-primary")">@((Model?.ProductID > 0) ? "Edit" : "Add")</button>
+    <div style="margin-left:190px">
+        <button type="submit" class=" btn @((Model?.ProductID > 0) ?  "btn-warning" :  "btn-primary")">@((Model?.ProductID > 0) ? "Edit" : "Add")</button>
+        <button type="reset" class="btn btn-secondary">Reset</button>
+        <a class="btn btn-success" onclick="window.history.back();">Back</a>
+    </div>
 </form>
 
 

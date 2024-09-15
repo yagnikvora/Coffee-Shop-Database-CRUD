@@ -5,12 +5,12 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Dashboard - NiceAdmin Bootstrap Template</title>
+    <title>Dashboard - Coffee Shop</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
-    <!-- Favicons -->
-    <link href="~/img/favicon.png" rel="icon">
+    <!-- coffees -->
+    <link href="~/img/coffee.png" rel="icon">
     <link href="~/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
@@ -29,23 +29,15 @@
     <!-- Template Main CSS File -->
     <link href="~/css/style.css" rel="stylesheet">
 
-    <!-- =======================================================
-    * Template Name: NiceAdmin
-    * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
-    * Updated: Apr 20 2024 with Bootstrap v5.3.3
-    * Author: BootstrapMade.com
-    * License: https://bootstrapmade.com/license/
-    ======================================================== -->
 </head>
 
 <body>
     <!-- ======= Header ======= -->
     <header id="header" class="header fixed-top d-flex align-items-center">
-
         <div class="d-flex align-items-center justify-content-between">
             <a href="index.html" class="logo d-flex align-items-center">
-                <img src="~/img/logo.png" alt="">
-                <span class="d-none d-lg-block">NiceAdmin</span>
+                <img src="~/img/coffee.png" alt="">
+                <span class="d-none d-lg-block">Coffee Shop</span>
             </a>
             <i class="bi bi-list toggle-sidebar-btn"></i>
         </div><!-- End Logo -->
@@ -278,49 +270,36 @@
                     <span>Dashboard</span>
                 </a>
             </li><!-- End Dashboard Nav -->
-            <li class="nav-item">
-                <a class="nav-link collapsed " data-bs-target="#Coffee-shop-nav" data-bs-toggle="collapse" href="#">
-                    <i class="bx bx-coffee"></i><span>Coffee Shop</span><i class="bi bi-chevron-down ms-auto"></i>
+            <li calss="nav-item">
+                <a class="nav-link"  asp-controller="Product" asp-action="ProductList">
+                    <i class='bx bxl-product-hunt'></i><span>Product</span>
                 </a>
-                <ul id="Coffee-shop-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-                    <li>
-                        <a asp-controller="Product" asp-action="ProductList">
-                        
-                            <i class="bi bi-circle"></i><span>Product</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a asp-controller="User" asp-action="UserList">
-                        
-                            <i class="bi bi-circle"></i><span>Users</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a asp-controller="Order" asp-action="OrderList">
-                        
-                            <i class="bi bi-circle"></i><span>Orders</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a asp-controller="OrderDetails" asp-action="OrderDetailsList">
-                        
-                            <i class="bi bi-circle"></i><span>Orders Details</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a asp-controller="Bills" asp-action="BillsList">
-                        
-                            <i class="bi bi-circle"></i><span>Bills</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a asp-controller="Customer" asp-action="CustomerList">
-                        
-                            <i class="bi bi-circle"></i><span>Customers</span>
-                        </a>
-                    </li>
-                </ul>
-            </li><!-- End Coffee Tables Nav -->
+            </li>
+            <li calss="nav-item">
+                <a class="nav-link"  asp-controller="User" asp-action="UserList">
+                    <i class='bx bx-user'></i></i><span>Users</span>
+                </a>
+            </li>
+            <li calss="nav-item">
+                <a class="nav-link"  asp-controller="Order" asp-action="OrderList">
+                    <i class='bx bx-box'></i></i><span>Orders</span>
+                </a>
+            </li>
+            <li calss="nav-item">
+                <a class="nav-link"  asp-controller="OrderDetails" asp-action="OrderDetailsList">
+                    <i class='bx bx-package'></i><span>Orders Details</span>
+                </a>
+            </li>
+            <li calss="nav-item">
+                <a class="nav-link"  asp-controller="Bills" asp-action="BillsList">
+                    <i class='bx bx-task'></i><span>Bills</span>
+                </a>
+            </li>
+            <li calss="nav-item">
+                <a class="nav-link"  asp-controller="Customer" asp-action="CustomerList">
+                    <i class='bx bx-universal-access'></i><span>Customers</span>
+                </a>
+            </li>
          </ul>
 
     </aside><!-- End Sidebar-->
@@ -337,7 +316,7 @@
             &copy; Copyright <strong><span>NiceAdmin</span></strong>. All Rights Reserved
         </div>
         <div class="credits">
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            Designed by Yagnik Vora (23010101661)
         </div>
     </footer><!-- End Footer -->
 

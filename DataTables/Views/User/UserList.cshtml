@@ -9,13 +9,13 @@
 <table class="table">
     <thead>
         <tr>
-            <th>UserID</th>
-            <th>UserName</th>
+            @* <th>User ID</th> *@
+            <th>User Name</th>
             <th>Email</th>
             <th>Password</th>
-            <th>MobileNo</th>
+            <th>Mobile No</th>
             <th>Address</th>
-            <th>IsActive</th>
+            <th>Active</th>
             <th colspan="2">Actions</th>
         </tr>
     </thead>
@@ -24,13 +24,13 @@
             foreach (DataRow user in Model.Rows)
             {
                 <tr>
-                    <td>@user["UserID"]</td>
+                    @*<td>@user["UserID"]</td>*@
                     <td>@user["UserName"]</td>
                     <td>@user["Email"]</td>
                     <td>@user["Password"]</td>
                     <td>@user["MobileNo"]</td>
                     <td>@user["Address"]</td>
-                    <td>@user["IsActive"]</td>
+                    <td>@((Convert.ToBoolean(user["IsActive"]))?"Yes":"No")</td>
                     <td>
                         <a asp-controller="User" asp-action="AddEditUser" asp-route-id = "@user["UserID"]">
                             <button type="submit" class="btn btn-warning">

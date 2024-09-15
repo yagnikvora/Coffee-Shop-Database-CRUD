@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\SEM-5\\DOTNET\\Web Applications\\DataTables\\DataTables.csproj": {}
+    "E:\\SEM-5\\DOTNET\\Coffee Shop Database CRUD\\DataTables\\DataTables.csproj": {}
   },
   "projects": {
-    "E:\\SEM-5\\DOTNET\\Web Applications\\DataTables\\DataTables.csproj": {
+    "E:\\SEM-5\\DOTNET\\Coffee Shop Database CRUD\\DataTables\\DataTables.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\SEM-5\\DOTNET\\Web Applications\\DataTables\\DataTables.csproj",
+        "projectUniqueName": "E:\\SEM-5\\DOTNET\\Coffee Shop Database CRUD\\DataTables\\DataTables.csproj",
         "projectName": "DataTables",
-        "projectPath": "E:\\SEM-5\\DOTNET\\Web Applications\\DataTables\\DataTables.csproj",
+        "projectPath": "E:\\SEM-5\\DOTNET\\Coffee Shop Database CRUD\\DataTables\\DataTables.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "E:\\SEM-5\\DOTNET\\Web Applications\\DataTables\\obj\\",
+        "outputPath": "E:\\SEM-5\\DOTNET\\Coffee Shop Database CRUD\\DataTables\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",

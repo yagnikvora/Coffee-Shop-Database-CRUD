@@ -15,7 +15,7 @@
             @* <th>Product ID</th> *@
             <th>Product Name</th>
             <th>Quantity</th>
-            <th>Amount</th>
+            <th style="padding-left:33px">Amount</th>
             <th>Total Amount</th>
             <th>User Name</th>
             <th colspan="2">Actions</th>
@@ -31,8 +31,8 @@
                 @* <td>@orderDetail["ProductID"]</td> *@
                 <td>@orderDetail["ProductName"]</td>
                 <td>@orderDetail["Quantity"]</td>
-                <td>@orderDetail["Amount"]</td>
-                <td>@orderDetail["TotalAmount"]</td>
+                <td style="text-align:end; padding-right:55px">@orderDetail["Amount"]</td>
+                <td style="text-align:end; padding-right:70px">@orderDetail["TotalAmount"]</td>
                 <td>@orderDetail["UserName"]</td>
                 <td>
                     <a asp-controller="OrderDetails" asp-action="AddEditOrderDetail" asp-route-id = "@orderDetail["OrderDetailID"]">

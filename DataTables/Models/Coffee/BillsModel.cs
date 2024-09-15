@@ -8,9 +8,11 @@ namespace DataTables.Models.Coffee
 
         [Required(ErrorMessage = "Bill Number is required")]
         [StringLength(100, ErrorMessage = "Bill Number cannot be longer than 100 characters")]
+        [RegularExpression("^B\\d{3}$", ErrorMessage = "Bill Number Must be Start with B and Contains 3 digits")]
         public string BillNumber { get; set; }
 
         [Required(ErrorMessage = "Bill Date is required")]
+        [DataType(DataType.Date)]
         public DateTime BillDate { get; set; }
 
         [Required(ErrorMessage = "Order ID is required")]

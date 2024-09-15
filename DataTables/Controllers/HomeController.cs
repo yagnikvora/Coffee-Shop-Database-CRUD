@@ -1,7 +1,4 @@
-using DataTables.Models;
-using DataTables.Models.Employee;
 using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
 
 namespace DataTables.Controllers
 {

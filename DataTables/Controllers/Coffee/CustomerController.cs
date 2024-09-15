@@ -8,7 +8,7 @@ namespace DataTables.Controllers.Coffee
 {
     public class CustomerController : Controller
     {
-        #region _onfiguration
+        #region Configuration
         private IConfiguration _configuration;
         public CustomerController(IConfiguration configuration)
         {

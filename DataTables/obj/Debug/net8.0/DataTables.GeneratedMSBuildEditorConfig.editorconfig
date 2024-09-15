@@ -9,123 +9,87 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DataTables
 build_property.RootNamespace = DataTables
-build_property.ProjectDir = E:\SEM-5\DOTNET\Web Applications\DataTables\
+build_property.ProjectDir = E:\SEM-5\DOTNET\Coffee Shop Database CRUD\DataTables\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = E:\SEM-5\DOTNET\Web Applications\DataTables
+build_property.MSBuildProjectDirectory = E:\SEM-5\DOTNET\Coffee Shop Database CRUD\DataTables
 build_property._RazorSourceGeneratorDebug = 
 
-[E:/SEM-5/DOTNET/Web Applications/DataTables/Views/Bills/AddEditBill.cshtml]
+[E:/SEM-5/DOTNET/Coffee Shop Database CRUD/DataTables/Views/Bills/AddEditBill.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlsbHNcQWRkRWRpdEJpbGwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/SEM-5/DOTNET/Web Applications/DataTables/Views/Bills/BillsList.cshtml]
+[E:/SEM-5/DOTNET/Coffee Shop Database CRUD/DataTables/Views/Bills/BillsList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlsbHNcQmlsbHNMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/SEM-5/DOTNET/Web Applications/DataTables/Views/Customer/AddEditCustomer.cshtml]
+[E:/SEM-5/DOTNET/Coffee Shop Database CRUD/DataTables/Views/Customer/AddEditCustomer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQWRkRWRpdEN1c3RvbWVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/SEM-5/DOTNET/Web Applications/DataTables/Views/Customer/CustomerList.cshtml]
+[E:/SEM-5/DOTNET/Coffee Shop Database CRUD/DataTables/Views/Customer/CustomerList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQ3VzdG9tZXJMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/SEM-5/DOTNET/Web Applications/DataTables/Views/Department/AddDepartment.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxBZGREZXBhcnRtZW50LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[E:/SEM-5/DOTNET/Web Applications/DataTables/Views/Department/DepartmentTable.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxEZXBhcnRtZW50VGFibGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[E:/SEM-5/DOTNET/Web Applications/DataTables/Views/EmployeeProject/AddEmployeeProject.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVQcm9qZWN0XEFkZEVtcGxveWVlUHJvamVjdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[E:/SEM-5/DOTNET/Web Applications/DataTables/Views/EmployeeProject/EmployeeProjectTable.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVQcm9qZWN0XEVtcGxveWVlUHJvamVjdFRhYmxlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[E:/SEM-5/DOTNET/Web Applications/DataTables/Views/Employee/AddEmployee.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcQWRkRW1wbG95ZWUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[E:/SEM-5/DOTNET/Web Applications/DataTables/Views/Employee/EmployeeTable.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRW1wbG95ZWVUYWJsZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[E:/SEM-5/DOTNET/Web Applications/DataTables/Views/Home/Index.cshtml]
+[E:/SEM-5/DOTNET/Coffee Shop Database CRUD/DataTables/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/SEM-5/DOTNET/Web Applications/DataTables/Views/Home/Privacy.cshtml]
+[E:/SEM-5/DOTNET/Coffee Shop Database CRUD/DataTables/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/SEM-5/DOTNET/Web Applications/DataTables/Views/OrderDetails/AddEditOrderDetail.cshtml]
+[E:/SEM-5/DOTNET/Coffee Shop Database CRUD/DataTables/Views/OrderDetails/AddEditOrderDetail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJEZXRhaWxzXEFkZEVkaXRPcmRlckRldGFpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/SEM-5/DOTNET/Web Applications/DataTables/Views/OrderDetails/OrderDetailsList.cshtml]
+[E:/SEM-5/DOTNET/Coffee Shop Database CRUD/DataTables/Views/OrderDetails/OrderDetailsList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJEZXRhaWxzXE9yZGVyRGV0YWlsc0xpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/SEM-5/DOTNET/Web Applications/DataTables/Views/Order/AddEditOrder.cshtml]
+[E:/SEM-5/DOTNET/Coffee Shop Database CRUD/DataTables/Views/Order/AddEditOrder.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcQWRkRWRpdE9yZGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/SEM-5/DOTNET/Web Applications/DataTables/Views/Order/OrderList.cshtml]
+[E:/SEM-5/DOTNET/Coffee Shop Database CRUD/DataTables/Views/Order/OrderList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcT3JkZXJMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/SEM-5/DOTNET/Web Applications/DataTables/Views/Product/AddEditProduct.cshtml]
+[E:/SEM-5/DOTNET/Coffee Shop Database CRUD/DataTables/Views/Product/AddEditProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxBZGRFZGl0UHJvZHVjdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/SEM-5/DOTNET/Web Applications/DataTables/Views/Product/ProductList.cshtml]
+[E:/SEM-5/DOTNET/Coffee Shop Database CRUD/DataTables/Views/Product/ProductList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxQcm9kdWN0TGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/SEM-5/DOTNET/Web Applications/DataTables/Views/Project/AddProject.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdFxBZGRQcm9qZWN0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[E:/SEM-5/DOTNET/Web Applications/DataTables/Views/Project/ProjectTable.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdFxQcm9qZWN0VGFibGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[E:/SEM-5/DOTNET/Web Applications/DataTables/Views/Shared/Error.cshtml]
+[E:/SEM-5/DOTNET/Coffee Shop Database CRUD/DataTables/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/SEM-5/DOTNET/Web Applications/DataTables/Views/Shared/_ValidationScriptsPartial.cshtml]
+[E:/SEM-5/DOTNET/Coffee Shop Database CRUD/DataTables/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/SEM-5/DOTNET/Web Applications/DataTables/Views/Student/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[E:/SEM-5/DOTNET/Web Applications/DataTables/Views/User/AddEditUser.cshtml]
+[E:/SEM-5/DOTNET/Coffee Shop Database CRUD/DataTables/Views/User/AddEditUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxBZGRFZGl0VXNlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/SEM-5/DOTNET/Web Applications/DataTables/Views/User/UserList.cshtml]
+[E:/SEM-5/DOTNET/Coffee Shop Database CRUD/DataTables/Views/User/UserList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVc2VyTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/SEM-5/DOTNET/Web Applications/DataTables/Views/_ViewImports.cshtml]
+[E:/SEM-5/DOTNET/Coffee Shop Database CRUD/DataTables/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/SEM-5/DOTNET/Web Applications/DataTables/Views/_ViewStart.cshtml]
+[E:/SEM-5/DOTNET/Coffee Shop Database CRUD/DataTables/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/SEM-5/DOTNET/Web Applications/DataTables/Views/Shared/_Layout.cshtml]
+[E:/SEM-5/DOTNET/Coffee Shop Database CRUD/DataTables/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-plr3t4otiy

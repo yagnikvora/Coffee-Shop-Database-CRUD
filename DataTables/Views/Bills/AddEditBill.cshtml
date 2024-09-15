@@ -2,10 +2,10 @@
 <h1>@((Model?.BillID > 0) ? "Edit" : "Add") Bill</h1>
 
 <form asp-controller="Bills" asp-action="SaveBill">
-    @Html.HiddenFor(m=>m.BillID)
+    @Html.HiddenFor(m => m.BillID)
     <div class="form-group row my-2">
         <label class="col-2" asp-for="BillNumber">Bill Number<span class="text-danger">*</span></label>
-        <input asp-for="BillNumber" class="form-control col" />
+        <input asp-for="BillNumber" class="form-control col" maxlength="4" />
         <span asp-validation-for="BillNumber" class="text-danger"></span>
     </div>
     <div class="form-group row my-2">
@@ -42,7 +42,11 @@
         </select>
         <span asp-validation-for="UserID" class="text-danger"></span>
     </div>
-    <button type="submit" class=" btn @((Model?.BillID > 0) ?  "btn-success" :  "btn-primary")">@((Model?.BillID > 0) ? "Edit" : "Add")</button>
+    <div style="margin-left:190px">
+        <button type="submit" class=" btn @((Model?.BillID > 0) ?  "btn-warning" :  "btn-primary")">@((Model?.BillID > 0) ? "Edit" : "Add")</button>
+        <button type="reset" class="btn btn-secondary">Reset</button>
+        <a class="btn btn-success" onclick="window.history.back();">Back</a>
+    </div>
 </form>
 
 @section Scripts {

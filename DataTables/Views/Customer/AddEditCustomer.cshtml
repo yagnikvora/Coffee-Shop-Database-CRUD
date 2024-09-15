@@ -20,7 +20,7 @@
     </div>
     <div class="form-group row my-2">
         <label class="col-2" asp-for="MobileNo">Mobile No<span class="text-danger">*</span></label>
-        <input asp-for="MobileNo" class="form-control col" />
+        <input type="number" asp-for="MobileNo" maxlength="10" class="form-control col" />
         <span asp-validation-for="MobileNo" class="text-danger"></span>
     </div>
     <div class="form-group row my-2">
@@ -50,9 +50,18 @@
         </select>
         <span asp-validation-for="UserID" class="text-danger"></span>
     </div>
-    <button type="submit" class=" btn @((Model?.CustomerID > 0) ?  "btn-success" :  "btn-primary")">@((Model?.CustomerID > 0) ? "Edit" : "Add")</button>
+    <div style="margin-left:190px">
+        <button type="submit" class=" btn @((Model?.CustomerID > 0) ?  "btn-warning" :  "btn-primary")">@((Model?.CustomerID > 0) ? "Edit" : "Add")</button>
+        <button type="reset" class="btn btn-secondary" >Reset</button>
+        <a class="btn btn-success" onclick="window.history.back();">Back</a>
+    </div>
 </form>
-
+<script>
+    function displayAlert(int id){
+        if(id>0)
+            return confirm("You can't Reset when Update If You reset then Old Value will automatically filled")
+    }
+</script>
 @section Scripts {
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");

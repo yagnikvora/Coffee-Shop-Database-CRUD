@@ -27,11 +27,11 @@
             <tr>
                 @* <td>@bill["BillID"]</td> *@
                 <td>@bill["BillNumber"]</td>
-                <td>@bill["BillDate"]</td>
+                <td>@bill["BillDate"].ToString().Substring(0,10)</td>
                 <td>@bill["OrderNumber"]</td>
-                <td>@bill["TotalAmount"]</td>
-                <td>@bill["Discount"]</td>
-                <td>@bill["NetAmount"]</td>
+                <td style="text-align:end; padding-right:45px">@bill["TotalAmount"]</td>
+                <td style="text-align:end; padding-right:38px">@bill["Discount"]</td>
+                <td style="text-align:end; padding-right:43px">@bill["NetAmount"]</td>
                 <td>@bill["UserName"]</td>
                 <td>
                     <a asp-controller="Bills" asp-action="AddEditBill" asp-route-id="@bill["BillID"]">

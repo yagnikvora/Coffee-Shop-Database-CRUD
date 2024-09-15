@@ -2,7 +2,7 @@
 <h1>@((Model?.OrderID > 0) ? "Edit" : "Add") Order</h1>
 
 <form asp-controller="Order" asp-action="SaveOrder">
-    @Html.HiddenFor(m=>m.OrderID)
+    @Html.HiddenFor(m => m.OrderID)
     <div class="form-group row my-2">
         <label class="col-2" asp-for="OrderDate">Order Date<span class="text-danger">*</span></label>
         <input asp-for="OrderDate" class="form-control col" />
@@ -22,7 +22,16 @@
     </div>
     <div class="form-group row my-2">
         <label class="col-2" asp-for="PaymentMode">Payment Mode<span class="text-danger">*</span></label>
-        <input asp-for="PaymentMode" class="form-control col" />
+        @*  <input asp-for="PaymentMode" class="form-control col" /> *@
+        <select asp-for="PaymentMode" class="form-control col">
+            <option value="" selected disabled>Select Payment Method</option>
+            <option value="Cash">Cash</option>
+            <option value="Cheque">Cheque</option>
+            <option value="UPI">UPI</option>
+            <option value="Net Banking">Net Banking</option>
+            <option value="Debit Card">Debit Card</option>
+            <option value="Credit Card">Credit Card</option>
+        </select>
         <span asp-validation-for="PaymentMode" class="text-danger"></span>
     </div>
     <div class="form-group row my-2">
@@ -32,7 +41,7 @@
     </div>
     <div class="form-group row my-2">
         <label class="col-2" asp-for="ShippingAddress">Shipping Address<span class="text-danger">*</span></label>
-        <input asp-for="ShippingAddress" class="form-control col" />
+        <textarea asp-for="ShippingAddress" class="form-control col" ></textarea>
         <span asp-validation-for="ShippingAddress" class="text-danger"></span>
     </div>
     <div class="form-group row my-2">
@@ -42,7 +51,11 @@
         </select>
         <span asp-validation-for="UserID" class="text-danger"></span>
     </div>
-    <button type="submit" class=" btn @((Model?.OrderID > 0) ?  "btn-success" :  "btn-primary")">@((Model?.OrderID > 0) ? "Edit" : "Add")</button>
+    <div style="margin-left:190px">
+        <button type="submit" class=" btn @((Model?.OrderID > 0) ?  "btn-warning" :  "btn-primary")">@((Model?.OrderID > 0) ? "Edit" : "Add")</button>
+        <button type="reset" class="btn btn-secondary">Reset</button>
+        <a class="btn btn-success" onclick="window.history.back();">Back</a>
+    </div>
 </form>
 
 @section Scripts {

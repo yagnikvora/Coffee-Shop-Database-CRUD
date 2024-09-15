@@ -26,7 +26,7 @@ namespace DataTables.Models.Coffee
 
         [Required(ErrorMessage = "Order Number is required")]
         [StringLength(8, ErrorMessage = "Order Number cannot be longer than 8 characters")]
-        [RegularExpression("^ORD\\d{5}$", ErrorMessage ="Order Number Must be Start with ORD and Contains 5 latters")]
+        [RegularExpression("^ORD\\d{5}$", ErrorMessage ="Order Number Must be Start with ORD and Contains 5 digits")]
         public string OrderNumber { get; set; }
         public int UserID { get; set; }
     }

@@ -31,7 +31,7 @@ namespace DataTables.Controllers.Coffee
         }
         #endregion
 
-        #region CHeck Add Edit
+        #region Check Add Edit
         public IActionResult AddEditOrder(int? id)
         {
             string connectionString = this._configuration.GetConnectionString("myConnectionString");
