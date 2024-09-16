@@ -100,12 +100,6 @@ namespace DataTables.Controllers.Coffee
                 connection1.Open();
                 SqlCommand command = connection1.CreateCommand();
                 command.CommandType = CommandType.StoredProcedure;
-                command.CommandText = "PR_Customer_Insert";
-                if (cm.CustomerID > 0)
-                {
-                    command.CommandText = "PR_Customer_UpdateByPk";
-                    command.Parameters.Add("@CustomerID", SqlDbType.Int).Value = cm.CustomerID;
-                }
                 command.Parameters.AddWithValue("CustomerName", cm.CustomerName);
                 command.Parameters.AddWithValue("HomeAddress", cm.HomeAddress);
                 command.Parameters.AddWithValue("Email", cm.Email);
@@ -115,9 +109,21 @@ namespace DataTables.Controllers.Coffee
                 command.Parameters.AddWithValue("PinCode", cm.PinCode);
                 command.Parameters.AddWithValue("NetAmount", cm.NetAmount);
                 command.Parameters.AddWithValue("UserID", cm.UserID);
-                command.ExecuteNonQuery();
-                return RedirectToAction("CustomerList");
-
+                if (cm.CustomerID > 0)
+                {
+                    command.CommandText = "PR_Customer_UpdateByPk";
+                    command.Parameters.Add("@CustomerID", SqlDbType.Int).Value = cm.CustomerID;
+                    command.ExecuteNonQuery();
+                    TempData["Message"] = "Record Updated Successfully";
+                    return RedirectToAction("CustomerList");
+                }
+                else
+                {
+                    command.CommandText = "PR_Customer_Insert";
+                    command.ExecuteNonQuery();
+                    TempData["Message"] = "Record Inserted Successfully";
+                    return RedirectToAction("AddEditCustomer");
+                }
             }
             else
             {

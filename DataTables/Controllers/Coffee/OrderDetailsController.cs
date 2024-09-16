@@ -122,20 +122,28 @@ namespace DataTables.Controllers.Coffee
                 connection1.Open();
                 SqlCommand command = connection1.CreateCommand();
                 command.CommandType = CommandType.StoredProcedure;
-                command.CommandText = "PR_OrderDetail_Insert";
-                if (odm.OrderDetailID > 0)
-                {
-                    command.CommandText = "PR_OrderDetail_UpdateByPk";
-                    command.Parameters.Add("@OrderDetailID", SqlDbType.Int).Value = odm.OrderDetailID;
-                }
                 command.Parameters.AddWithValue("OrderID", odm.OrderID);
                 command.Parameters.AddWithValue("ProductID", odm.ProductID);
                 command.Parameters.AddWithValue("Quantity", odm.Quantity);
                 command.Parameters.AddWithValue("Amount", odm.Amount);
                 command.Parameters.AddWithValue("TotalAmount", odm.TotalAmount);
                 command.Parameters.AddWithValue("UserID", odm.UserID);
-                command.ExecuteNonQuery();
-                return RedirectToAction("OrderDetailsList");
+                if (odm.OrderDetailID > 0)
+                {
+                    command.CommandText = "PR_OrderDetail_UpdateByPk";
+                    command.Parameters.Add("@OrderDetailID", SqlDbType.Int).Value = odm.OrderDetailID;
+                    TempData["Message"] = "Record Updated Successfully";
+                    command.ExecuteNonQuery();
+                    return RedirectToAction("OrderDetailsList");
+                }
+                else
+                {
+                    command.CommandText = "PR_OrderDetail_Insert";
+                    command.ExecuteNonQuery();
+                    TempData["Message"] = "Record Inserted Successfully";
+                    return RedirectToAction("AddEditOrderDetail");
+
+                }
             }
             else
             {

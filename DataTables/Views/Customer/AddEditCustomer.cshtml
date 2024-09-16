@@ -1,6 +1,14 @@
 ﻿@model DataTables.Models.Coffee.CustomerModel
-<h1>@((Model?.CustomerID > 0) ? "Edit" : "Add") Customer</h1>
+<div class="row">
 
+    <h1 class="col-7">@((Model?.CustomerID > 0) ? "Edit" : "Add") Customer</h1>
+    @{
+        if (@TempData["Message"] != null)
+        {
+            <p id="myElement" class="col text-success bg-success-subtle p-2 rounded">@TempData["Message"]</p>
+        }
+    }
+</div>
 <form asp-controller="Customer" asp-action="SaveCustomer">
     @Html.HiddenFor(m=>m.CustomerID)
     <div class="form-group row my-2">
@@ -20,7 +28,7 @@
     </div>
     <div class="form-group row my-2">
         <label class="col-2" asp-for="MobileNo">Mobile No<span class="text-danger">*</span></label>
-        <input type="number" asp-for="MobileNo" maxlength="10" class="form-control col" />
+        <input type="text" asp-for="MobileNo" maxlength="10" class="form-control col" />
         <span asp-validation-for="MobileNo" class="text-danger"></span>
     </div>
     <div class="form-group row my-2">
@@ -53,14 +61,17 @@
     <div style="margin-left:190px">
         <button type="submit" class=" btn @((Model?.CustomerID > 0) ?  "btn-warning" :  "btn-primary")">@((Model?.CustomerID > 0) ? "Edit" : "Add")</button>
         <button type="reset" class="btn btn-secondary" >Reset</button>
-        <a class="btn btn-success" onclick="window.history.back();">Back</a>
+        <a class="btn btn-success" asp-controller="Customer" asp-action="CustomerList">Back</a>
     </div>
 </form>
 <script>
-    function displayAlert(int id){
-        if(id>0)
-            return confirm("You can't Reset when Update If You reset then Old Value will automatically filled")
-    }
+    var element = document.getElementById("myElement");
+
+    element.style.display = "block";
+
+    setTimeout(() => {
+        element.style.display = "none";
+    }, 3500);
 </script>
 @section Scripts {
     @{

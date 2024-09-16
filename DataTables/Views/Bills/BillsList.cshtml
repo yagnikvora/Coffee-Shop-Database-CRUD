@@ -9,6 +9,10 @@
         {
             <p id="myElement" class="col text-danger bg-danger-subtle p-2 rounded">@TempData["Notification"]</p>
         }
+        if (@TempData["Message"] != null)
+        {
+            <p id="myElement" class="col text-warning bg-warning-subtle p-2 rounded">@TempData["Message"]</p>
+        }
     }
 </div>
 <hr />

@@ -1,6 +1,14 @@
 ﻿@model DataTables.Models.Coffee.OrderModel
-<h1>@((Model?.OrderID > 0) ? "Edit" : "Add") Order</h1>
+<div class="row">
 
+    <h1 class="col-7">@((Model?.OrderID > 0) ? "Edit" : "Add") Order</h1>
+    @{
+        if (@TempData["Message"] != null)
+        {
+            <p id="myElement" class="col text-success bg-success-subtle p-2 rounded">@TempData["Message"]</p>
+        }
+    }
+</div>
 <form asp-controller="Order" asp-action="SaveOrder">
     @Html.HiddenFor(m => m.OrderID)
     <div class="form-group row my-2">
@@ -54,10 +62,18 @@
     <div style="margin-left:190px">
         <button type="submit" class=" btn @((Model?.OrderID > 0) ?  "btn-warning" :  "btn-primary")">@((Model?.OrderID > 0) ? "Edit" : "Add")</button>
         <button type="reset" class="btn btn-secondary">Reset</button>
-        <a class="btn btn-success" onclick="window.history.back();">Back</a>
+        <a class="btn btn-success" asp-controller="Order" asp-action="OrderList">Back</a>
     </div>
 </form>
+<script>
+    var element = document.getElementById("myElement");
 
+    element.style.display = "block";
+
+    setTimeout(() => {
+        element.style.display = "none";
+    }, 3500);
+</script>
 @section Scripts {
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");

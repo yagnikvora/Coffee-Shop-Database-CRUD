@@ -94,19 +94,28 @@ namespace DataTables.Controllers.Coffee
                 connection1.Open();
                 SqlCommand command = connection1.CreateCommand();
                 command.CommandType = CommandType.StoredProcedure;
-                command.CommandText = "PR_Product_Insert";
-                if (pm.ProductID > 0)
-                {
-                    command.CommandText = "PR_Product_UpdateByPk";
-                    command.Parameters.Add("@ProductID", SqlDbType.Int).Value = pm.ProductID;
-                }
                 command.Parameters.AddWithValue("ProductName", pm.ProductName);
                 command.Parameters.AddWithValue("ProductPrice", pm.ProductPrice);
                 command.Parameters.AddWithValue("ProductCode", pm.ProductCode);
                 command.Parameters.AddWithValue("Description", pm.Description);
                 command.Parameters.AddWithValue("UserID", pm.UserID);
-                command.ExecuteNonQuery();
-                return RedirectToAction("ProductList");
+                if (pm.ProductID > 0)
+                {
+                    command.CommandText = "PR_Product_UpdateByPk";
+                    command.Parameters.Add("@ProductID", SqlDbType.Int).Value = pm.ProductID;
+                    TempData["Message"] = "Record Updated Successfully";
+                    command.ExecuteNonQuery();
+                    return RedirectToAction("ProductList");
+
+                }
+                else
+                {
+                    command.CommandText = "PR_Product_Insert";
+                    TempData["Message"] = "Record Inserted Successfully";
+                    command.ExecuteNonQuery();
+                    return RedirectToAction("AddEditProduct");
+                }
+                
             }
             else
             {

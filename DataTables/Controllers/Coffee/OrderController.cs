@@ -111,12 +111,6 @@ namespace DataTables.Controllers.Coffee
                 connection1.Open();
                 SqlCommand command = connection1.CreateCommand();
                 command.CommandType = CommandType.StoredProcedure;
-                command.CommandText = "PR_Order_Insert";
-                if (om.OrderID > 0)
-                {
-                    command.CommandText = "PR_Order_UpdateByPk";
-                    command.Parameters.Add("@OrderID", SqlDbType.Int).Value = om.OrderID;
-                }
                 command.Parameters.AddWithValue("OrderDate", om.OrderDate);
                 command.Parameters.AddWithValue("CustomerID", om.CustomerID);
                 command.Parameters.AddWithValue("OrderNumber", om.OrderNumber);
@@ -124,8 +118,22 @@ namespace DataTables.Controllers.Coffee
                 command.Parameters.AddWithValue("TotalAmount", om.TotalAmount);
                 command.Parameters.AddWithValue("ShippingAddress", om.ShippingAddress);
                 command.Parameters.AddWithValue("UserID", om.UserID);
-                command.ExecuteNonQuery();
-                return RedirectToAction("OrderList");
+                if (om.OrderID > 0)
+                {
+                    command.CommandText = "PR_Order_UpdateByPk";
+                    command.Parameters.Add("@OrderID", SqlDbType.Int).Value = om.OrderID;
+                    command.ExecuteNonQuery();
+                    TempData["Message"] = "Record Updated Successfully";
+                    return RedirectToAction("OrderList");
+                }
+                else
+                {
+                    command.CommandText = "PR_Order_Insert";
+                    command.ExecuteNonQuery();
+                    TempData["Message"] = "Record Inserted Successfully";
+                    return RedirectToAction("AddEditOrder");
+                }
+                
             }
             else
             {

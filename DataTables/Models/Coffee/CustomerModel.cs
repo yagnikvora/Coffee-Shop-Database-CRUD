@@ -20,7 +20,8 @@ namespace DataTables.Models.Coffee
 
         [Required(ErrorMessage = "Mobile No is required")]
         [Phone(ErrorMessage = "Invalid Phone Number")]
-        [MinLength(10, ErrorMessage ="Mobile number should be 10 digits")]
+        [MinLength(10, ErrorMessage = "Mobile number should be 10 digits")]
+        [RegularExpression("^\\d+$", ErrorMessage = "Mobile number does not contains alphabet")]
         public string MobileNo { get; set; }
 
         [Required(ErrorMessage = "GST NO is required")]

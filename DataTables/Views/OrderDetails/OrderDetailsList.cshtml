@@ -8,6 +8,10 @@
         {
             <p id="myElement" class="col text-danger bg-danger-subtle p-2 rounded">@TempData["Notification"]</p>
         }
+        if (@TempData["Message"] != null)
+        {
+            <p id="myElement" class="col text-warning bg-warning-subtle p-2 rounded">@TempData["Message"]</p>
+        }
     }
 </div>
 <hr />
@@ -51,7 +55,7 @@
                 <td>
                     <form method="post" asp-controller="OrderDetails" asp-action="OrderDetailDelete">
                         <input type="hidden" name="OrderDetailID" value="@orderDetail["OrderDetailID"]" />
-                    <button onclick=" return confirm('Sure!! Are you want to delete @orderDetail["OrderDetailID"]')" type="submit" class="btn btn-danger">
+                    <button onclick=" return confirm('Sure!! Are you want to delete @orderDetail["OrderNumber"]')" type="submit" class="btn btn-danger">
                             <i class="bx bxs-trash"></i>
                         </button>
                     </form>

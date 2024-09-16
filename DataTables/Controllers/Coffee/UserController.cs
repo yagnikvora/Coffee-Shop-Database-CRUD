@@ -79,20 +79,29 @@ namespace DataTables.Controllers.Coffee
                 connection1.Open();
                 SqlCommand command = connection1.CreateCommand();
                 command.CommandType = CommandType.StoredProcedure;
-                command.CommandText = "PR_User_Insert";
-                if(um.UserID > 0)
-                {
-                    command.CommandText = "PR_User_UpdateByPk";
-                    command.Parameters.Add("@UserID", SqlDbType.Int).Value = um.UserID;
-                }
+                
                 command.Parameters.AddWithValue("UserName", um.UserName);
                 command.Parameters.AddWithValue("Email", um.Email);
                 command.Parameters.AddWithValue("Password", um.Password);
                 command.Parameters.AddWithValue("MobileNo", um.MobileNo);
                 command.Parameters.AddWithValue("Address", um.Address);
                 command.Parameters.AddWithValue("IsActive", um.IsActive);
-                command.ExecuteNonQuery();
-                return RedirectToAction("UserList");
+                if(um.UserID > 0)
+                {
+                    command.CommandText = "PR_User_UpdateByPk";
+                    command.Parameters.Add("@UserID", SqlDbType.Int).Value = um.UserID;
+                    command.ExecuteNonQuery();
+                    TempData["Message"] = "Record Updated Successfully";
+                    return RedirectToAction("UserList");
+                }
+                else
+                {
+                    command.CommandText = "PR_User_Insert";
+                    command.ExecuteNonQuery();
+                    TempData["Message"] = "Record Inserted Successfully";
+                    return RedirectToAction("AddEditUser");
+                }
+
             }
             else
             {
