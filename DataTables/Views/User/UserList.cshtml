@@ -1,8 +1,15 @@
 ﻿@model DataTable
 @using System.Data
+<div class="row">
 
-<h2>Users List</h2>
-<p class="text-danger">@TempData["ErrorMessage"]</p>
+    <h2 class="col-7">Users List</h2>
+    @{
+        if (@TempData["Notification"] != null)
+        {
+            <p id="myElement" class="col text-danger bg-danger-subtle p-2 rounded">@TempData["Notification"]</p>
+        }
+    }
+</div>
 <hr />
 <a class="btn btn-info" asp-controller="User" asp-action="AddEditUser">Add Users</a>
 
@@ -30,9 +37,9 @@
                     <td>@user["Password"]</td>
                     <td>@user["MobileNo"]</td>
                     <td>@user["Address"]</td>
-                    <td>@((Convert.ToBoolean(user["IsActive"]))?"Yes":"No")</td>
+                    <td>@((Convert.ToBoolean(user["IsActive"])) ? "Yes" : "No")</td>
                     <td>
-                        <a asp-controller="User" asp-action="AddEditUser" asp-route-id = "@user["UserID"]">
+                        <a asp-controller="User" asp-action="AddEditUser" asp-route-id="@user["UserID"]">
                             <button type="submit" class="btn btn-warning">
                                 <i class="bx bx-edit"></i>
                             </button>
@@ -41,7 +48,7 @@
                     <td>
                         <form method="post" asp-controller="User" asp-action="UserDelete">
                             <input type="hidden" name="UserID" value="@user["UserID"]" />
-                            <button onclick=" return confirm('Sure!! Are you want to delete @user["UserName"]')" type="submit" class="btn btn-danger">
+                            <button type="submit" onclick=" return confirm('Sure!! Are you want to delete @user["UserName"]')" class="btn btn-danger">
                                 <i class="bx bxs-trash"></i>
                             </button>
                         </form>
@@ -51,3 +58,12 @@
         }
     </tbody>
 </table>
+<script>
+    var element = document.getElementById("myElement");
+
+    element.style.display = "block";
+
+    setTimeout(() => {
+        element.style.display = "none";
+    }, 3500);
+</script>

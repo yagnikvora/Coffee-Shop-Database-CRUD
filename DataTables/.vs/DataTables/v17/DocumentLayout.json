@@ -5,26 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{645E7273-E017-4C43-9B42-D323F8DEF109}|DataTables.csproj|e:\\sem-5\\dotnet\\coffee shop database crud\\datatables\\controllers\\coffee\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{645E7273-E017-4C43-9B42-D323F8DEF109}|DataTables.csproj|solutionrelative:controllers\\coffee\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{645E7273-E017-4C43-9B42-D323F8DEF109}|DataTables.csproj|e:\\sem-5\\dotnet\\coffee shop database crud\\datatables\\controllers\\coffee\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{645E7273-E017-4C43-9B42-D323F8DEF109}|DataTables.csproj|solutionrelative:controllers\\coffee\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{645E7273-E017-4C43-9B42-D323F8DEF109}|DataTables.csproj|e:\\sem-5\\dotnet\\coffee shop database crud\\datatables\\controllers\\coffee\\orderdetailscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{645E7273-E017-4C43-9B42-D323F8DEF109}|DataTables.csproj|solutionrelative:controllers\\coffee\\orderdetailscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{645E7273-E017-4C43-9B42-D323F8DEF109}|DataTables.csproj|e:\\sem-5\\dotnet\\coffee shop database crud\\datatables\\controllers\\coffee\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{645E7273-E017-4C43-9B42-D323F8DEF109}|DataTables.csproj|solutionrelative:controllers\\coffee\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{645E7273-E017-4C43-9B42-D323F8DEF109}|DataTables.csproj|e:\\sem-5\\dotnet\\coffee shop database crud\\datatables\\controllers\\coffee\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{645E7273-E017-4C43-9B42-D323F8DEF109}|DataTables.csproj|solutionrelative:controllers\\coffee\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{645E7273-E017-4C43-9B42-D323F8DEF109}|DataTables.csproj|e:\\sem-5\\dotnet\\coffee shop database crud\\datatables\\controllers\\coffee\\billscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{645E7273-E017-4C43-9B42-D323F8DEF109}|DataTables.csproj|solutionrelative:controllers\\coffee\\billscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -44,74 +24,9 @@
               "RelativeDocumentMoniker": "Controllers\\Coffee\\UserController.cs",
               "ToolTip": "E:\\SEM-5\\DOTNET\\Coffee Shop Database CRUD\\DataTables\\Controllers\\Coffee\\UserController.cs",
               "RelativeToolTip": "Controllers\\Coffee\\UserController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAUAAAA",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAQwF4AAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T19:02:26.885Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "OrderDetailsController.cs",
-              "DocumentMoniker": "E:\\SEM-5\\DOTNET\\Coffee Shop Database CRUD\\DataTables\\Controllers\\Coffee\\OrderDetailsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\Coffee\\OrderDetailsController.cs",
-              "ToolTip": "E:\\SEM-5\\DOTNET\\Coffee Shop Database CRUD\\DataTables\\Controllers\\Coffee\\OrderDetailsController.cs",
-              "RelativeToolTip": "Controllers\\Coffee\\OrderDetailsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAG8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T19:02:07.991Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "OrderController.cs",
-              "DocumentMoniker": "E:\\SEM-5\\DOTNET\\Coffee Shop Database CRUD\\DataTables\\Controllers\\Coffee\\OrderController.cs",
-              "RelativeDocumentMoniker": "Controllers\\Coffee\\OrderController.cs",
-              "ToolTip": "E:\\SEM-5\\DOTNET\\Coffee Shop Database CRUD\\DataTables\\Controllers\\Coffee\\OrderController.cs",
-              "RelativeToolTip": "Controllers\\Coffee\\OrderController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T19:01:52.796Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CustomerController.cs",
-              "DocumentMoniker": "E:\\SEM-5\\DOTNET\\Coffee Shop Database CRUD\\DataTables\\Controllers\\Coffee\\CustomerController.cs",
-              "RelativeDocumentMoniker": "Controllers\\Coffee\\CustomerController.cs",
-              "ToolTip": "E:\\SEM-5\\DOTNET\\Coffee Shop Database CRUD\\DataTables\\Controllers\\Coffee\\CustomerController.cs",
-              "RelativeToolTip": "Controllers\\Coffee\\CustomerController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJYAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T19:01:31.002Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BillsController.cs",
-              "DocumentMoniker": "E:\\SEM-5\\DOTNET\\Coffee Shop Database CRUD\\DataTables\\Controllers\\Coffee\\BillsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\Coffee\\BillsController.cs",
-              "ToolTip": "E:\\SEM-5\\DOTNET\\Coffee Shop Database CRUD\\DataTables\\Controllers\\Coffee\\BillsController.cs",
-              "RelativeToolTip": "Controllers\\Coffee\\BillsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T16:24:03.015Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "E:\\SEM-5\\DOTNET\\Coffee Shop Database CRUD\\DataTables\\Controllers\\Coffee\\ProductController.cs",
-              "RelativeDocumentMoniker": "Controllers\\Coffee\\ProductController.cs",
-              "ToolTip": "E:\\SEM-5\\DOTNET\\Coffee Shop Database CRUD\\DataTables\\Controllers\\Coffee\\ProductController.cs",
-              "RelativeToolTip": "Controllers\\Coffee\\ProductController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T19:01:26.891Z",
+              "WhenOpened": "2024-09-16T16:18:26.386Z",
               "EditorCaption": ""
             }
           ]

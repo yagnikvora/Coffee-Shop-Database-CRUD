@@ -11,8 +11,16 @@
         display: none;
     }
 </style>
-<h2>Customer List</h2>
-<p class="text-danger">@TempData["ErrorMessage"]</p>
+<div class="row">
+
+    <h2 class="col-7">Customers List</h2>
+    @{
+        if (@TempData["Notification"] != null)
+        {
+            <p id="myElement" class="col text-danger bg-danger-subtle p-2 rounded">@TempData["Notification"]</p>
+        }
+    }
+</div>
 <hr />
 <a class="btn btn-info" asp-controller="Customer" asp-action="AddEditCustomer">Add Customer</a>
 <div class="table-wrapper">
@@ -67,3 +75,12 @@
     </tbody>
 </table>
 </div>
+<script>
+    var element = document.getElementById("myElement");
+
+    element.style.display = "block";
+
+    setTimeout(() => {
+        element.style.display = "none";
+    }, 3500);
+</script>

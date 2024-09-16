@@ -1,9 +1,16 @@
 ﻿@using System.Data
 @model DataTable
+<div class="row">
 
-<h2>Products List</h2>
+    <h2 class="col-7">Products List</h2>
+    @{
+        if (@TempData["Notification"] != null)
+        {
+            <p id="myElement" class="col text-danger bg-danger-subtle p-2 rounded">@TempData["Notification"]</p>
+        }
+    }
+</div>
 <hr />
-<p class="text-danger">@TempData["ErrorMessage"]</p>
 <a class="btn btn-info" asp-controller="Product" asp-action="AddEditProduct">Add Product</a>
 <table class="table">
     <thead>
@@ -50,3 +57,12 @@
         }
     </tbody>
 </table>
+<script>
+    var element = document.getElementById("myElement");
+
+    element.style.display = "block";
+
+    setTimeout(() => {
+        element.style.display = "none";
+    }, 3500);
+</script>

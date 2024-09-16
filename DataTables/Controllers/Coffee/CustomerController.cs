@@ -144,6 +144,8 @@ namespace DataTables.Controllers.Coffee
             catch (Exception ex)
             {
                 TempData["ErrorMessage"] = ex.Message;
+                TempData["Notification"] = "You can not delete this record due to Foreign Key Constraints ";
+
                 Console.WriteLine(ex.ToString());
                 return RedirectToAction("CustomerList");
             }
