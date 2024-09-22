@@ -155,6 +155,8 @@ namespace DataTables.Controllers.Coffee
                 command.CommandText = "PR_Order_DeleteByPk";
                 command.Parameters.Add("@OrderID", SqlDbType.Int).Value = OrderID;
                 command.ExecuteNonQuery();
+                TempData["Notification"] = "Record Deleted Successfully";
+
                 return RedirectToAction("OrderList");
             }
             catch (Exception ex)

@@ -123,6 +123,8 @@ namespace DataTables.Controllers.Coffee
                 command.CommandText = "PR_User_DeleteByPk";
                 command.Parameters.Add("@UserID", SqlDbType.Int).Value = UserID;
                 command.ExecuteNonQuery();
+                TempData["Notification"] = "Record Deleted Successfully";
+
                 return RedirectToAction("UserList");
             }
             catch (Exception ex)

@@ -155,6 +155,8 @@ namespace DataTables.Controllers.Coffee
                 command.CommandText = "PR_Bills_DeleteByPk";
                 command.Parameters.Add("@BillID", SqlDbType.Int).Value = BillID;
                 command.ExecuteNonQuery();
+                TempData["Notification"] = "Record Deleted Successfully";
+
                 return RedirectToAction("BillsList");
             }
             catch (Exception ex)
