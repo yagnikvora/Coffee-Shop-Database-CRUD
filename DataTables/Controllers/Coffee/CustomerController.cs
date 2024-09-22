@@ -6,6 +6,7 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace DataTables.Controllers.Coffee
 {
+    [CheckAccess]
     public class CustomerController : Controller
     {
         #region Configuration

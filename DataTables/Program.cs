@@ -1,10 +1,15 @@
-namespace DataTables
+﻿namespace DataTables
 {
     public class Program
     {
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
+            //Login 
+            builder.Services.AddDistributedMemoryCache();
+            builder.Services.AddHttpContextAccessor();
+            builder.Services.AddSession();
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
@@ -19,6 +24,14 @@ namespace DataTables
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            // Enable session middleware
+            app.UseSession();
+
+            app.UseHttpsRedirection();
+
+            // enables the authentication middleware in ASP.NET Core to handle user authentication for securing endpoints.​
+            app.UseAuthentication();
 
             app.UseAuthorization();
 

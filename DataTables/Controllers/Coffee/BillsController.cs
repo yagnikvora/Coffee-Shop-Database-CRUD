@@ -5,6 +5,7 @@ using System.Data;
 
 namespace DataTables.Controllers.Coffee
 {
+    [CheckAccess]
     public class BillsController : Controller
     {
         #region Configurtions

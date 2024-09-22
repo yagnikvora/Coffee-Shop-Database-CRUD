@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DataTables.Controllers
 {
+    [CheckAccess]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
